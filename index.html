@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabio Augusto Mazuchi</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <title>Portfólio (Fabio)</title>
 </head>
+
 <body>
-    <h1>Fabio Augusto Mazuchi</h1>
-    <img src="images/perfil2.jpg" alt="Esta é uma foto minha">
-    <p>Meu nome é <em>Fabio</em> tenho 37 anos, <b>brasileiro</b> da cidade de <b>Santo André - São Paulo</b></p>
-    <h2>Minhas Habilidades:</h2>
-    <ul>
-        <li>HTML</li>
-        <li><b>CSS</b></li>
+  <div class="lateral">
+    <div class="lateral-single">
+      <h1>Fabio Augusto Mazuchi</h1>
+      <img src="images/perfil2.jpg" alt="Fabio Mazuchi">
+      <p><em>Esta é uma foto do meu rosto que utilizo em meus perfis nas redes sociais.</em></p>
+      <a onclick="trocaDivSobre()" href="#">Sobre</a>
+      <a onclick="trocaDivHabilidades()" href="#">Habilidades</a>
+    </div><!--lateral-single-->
+  </div><!--lateral-->
+  <div class="conteudo">
+    <div id="sobre" class="conteudo-single">
+      <h1>Descrição</h1>
+      <p>Meu primeiro nome é <a href="images/perfil2.jpg">Fabio</a> e meu sobrenome é <em>Augusto Mazuchi<em>, tenho 37 anos de idade, <b>brasileiro</b>, moro na cidade de <b>Santo André</b> no bairro <b>Parque João Ramalho</b> estado de <b>São Paulo</b>.</p>
+    </div><!--conteudo-single-->
+    <div id="habilidades" class="conteudo-single">
+      <h1>Habilidades</h1>
+      <ul>
+        <li><b>HTML</b></li>
+        <li>CSS</li>
         <li>Java Script</li>
-        <li>Git</li>
-        <li>Github</li>
-    </ul>
-    <a href="images/perfil2.jpg">Minha Foto</a>
-    <a href="https://www.w3schools.com/">W3Schols.com</a>
+      </ul>
+      <p>Uma dos meus sites preferidos para aprender tecnologias é a <a target="_blank" href="https://www.w3schools.com/">W3scolls</a>.</p>
+    </div><!--conteudo-single-->
+  </div><!--conteudo-->
+  <div class="clear"></div>
+
+  <script src="script/script.js"></script>
 </body>
 </html>
