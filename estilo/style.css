@@ -31,6 +31,7 @@ p{font-size: 14px;margin-bottom: 22px;}
     font-size: 17px;
     font-weight: bold;
 }
+.lateral a:hover{text-decoration: underline;}
 
 .lateral img{
     width: 170px;
@@ -51,7 +52,7 @@ p{font-size: 14px;margin-bottom: 22px;}
 
 .conteudo-single{
     width: 80%;
-    padding: 0 1%;
+    padding: 0 2%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -69,9 +70,11 @@ p{font-size: 14px;margin-bottom: 22px;}
 .conteudo-single ul{list-style-position: inside;margin-bottom: 15px;}
 .conteudo-single ul li{font-size: 20px;}
 .conteudo-single a{text-decoration: none;color: #71a9f7;font-weight: 500;}
-
-
-
-
 #habilidades{display: none;}
+
+@media screen and (max-width: 930px){
+    .lateral,.conteudo,.conteudo-single{width: 100%;}
+    .lateral{padding: 30px 1%;height: auto;}
+    .conteudo{height: 350px}
+}
 
