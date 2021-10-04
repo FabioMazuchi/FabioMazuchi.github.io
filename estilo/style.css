@@ -30,10 +30,11 @@ p{font-size: 16px;margin-bottom: 22px;}
     display: inline-block;
     margin-bottom: 8px;
     background: #71a9f7;
-    color: white;
-    font-size: 16px;
+    color: black;
+    font-size: 14px;
     font-weight: 500;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .lateral img{
@@ -69,7 +70,8 @@ p{font-size: 16px;margin-bottom: 22px;}
     font-weight: 500;
     font-style: normal;
 }
-.conteudo-single p{font-size: 22px;}
+.conteudo-single p{font-size: 22px;font-weight: lighter;}
+.conteudo-single strong{font-weight: 500;}
 .conteudo-single ul{list-style-position: inside;margin-bottom: 15px;}
 .conteudo-single ul li{font-size: 25px;}
 .conteudo-single a{text-decoration: none;color: #71a9f7;font-weight: 500;}
