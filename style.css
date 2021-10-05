@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+body {height: 100%;}
+
+.intro{
+    background-color: #2D2A32;
+    text-align: center;
+    padding: 40px 0;
+    font-weight: bold;
+}
+
+.intro h1{
+    color: #FAFDF6;
+    margin-bottom: 10px;
+    font-size: 45px;
+}
+
+.intro img{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 270px;
+    border: 3px solid #FAFDF6;
+    margin-bottom: 30px;
+}
+
+.intro a{
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    width: 130px;
+    padding: 2px 0;
+    background-color: #EAE151;
+    margin: 0 8px;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+.sobre{
+    padding: 40px 2%;
+    background-color: #3c3842;
+}
+
+.sobre a{
+    color: #FAFDF6;
+    text-decoration: none;
+}
+
+h2{
+    font-size: 60px;
+    border-bottom: 1px solid #FAFDF6;
+    margin-bottom: 10px;
+    color: #EAE151;
+}
+
+p{
+    font-size: 23px;
+    color: #FAFDF6;
+}
+
+.habilidades{
+    padding: 40px 2%;
+    background-color: #3c3842;
+}
+
+.habilidades ul{
+    list-style-type: none;
+}
+
+.habilidades li{
+    font-size: 23px;
+    color: #FAFDF6;
+}
+
+.frase{
+    padding: 15px 0;
+    background-color: #201e24;
+}
+
+.frase p{
+    color: #FAFDF6;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+}
+
+.frase a{
+    color: #FAFDF6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+
