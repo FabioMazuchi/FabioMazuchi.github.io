@@ -20,35 +20,35 @@ html,body{
 	height: 100%;
 	float: left;
 	background: #A5ABAF;
-	padding: 220px 1% 0 1%;
+	padding: 80px 1% 0 1%;
 	text-align: center;
 	color: white;
 }
 
 .lateral h1{
-	font-size: 32px;
+	font-size: 25px;
 	margin-bottom: 22px;
 	font-weight: 500;
 	color: #F8FCDA;
 }
 
 .lateral img{
-	width: 270px;
-	height: 270px;
+	width: 190px;
+	height: 190px;
 	border-radius: 50%;
 	border: 4px solid #ccc;
 	margin-bottom: 18px  ;
 }
 
 .lateral a{
-	width: 180px;
+	width: 140px;
 	text-decoration: none;
 	padding: 6px 0;
 	display: block;
 	background: #E3E9C2;
 	color: #A5ABAF;
 	font-weight: 700;
-	font-size: 25px;
+	font-size: 18px;
 	border: 0;
 	border-radius: 8px;
 	cursor: pointer;
@@ -73,23 +73,24 @@ html,body{
 	transform: translate(-50%,-50%);
 }
 .conteudo-single h1{
-	font-size: 50px;
+	font-size: 45px;
 	margin-bottom: 12px;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid;
 	padding-bottom: 12px;
 	font-weight: 500;
 	font-style: normal;
 	color: #7C6354;
 }
+
 .conteudo-single p{
-	font-size: 26px;
+	font-size: 23px;
 	margin-bottom: 22px;
 	line-height: 35px;
 	color: #7C6354;
 	font-weight: 500;
 }
 
-.conteudo-single ul{list-style-type: none;margin-bottom: 15px;}
+.conteudo-single ul{list-style-type: none;margin-top: 40px;}
 .conteudo-single ul li{font-size: 30px;margin-bottom: 10px;color: #7C6354 ;}
 .conteudo-single a{text-decoration: none;color: #7C6354;}
 #habilidades{display: none;}
@@ -105,7 +106,7 @@ footer{
 }
 
 footer p {
-	font-size: 23px;
+	font-size: 17px;
 	font-weight: 500;
 	padding: 0 1%;
 	color: #7C6354;
@@ -114,11 +115,11 @@ footer p {
 footer a {
 	font-weight: 600;
 	text-decoration: none;
-	font-size: 23px;
+	font-size: 17px;
 	color: #7C6354;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1000px){
 	.lateral,.conteudo,.conteudo-single{width: 100%;}
 	.lateral{padding: 30px 1%;height: auto;}
 	.conteudo{height: 480px}
