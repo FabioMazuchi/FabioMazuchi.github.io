@@ -119,8 +119,25 @@ footer a {
 	color: #7C6354;
 }
 
+.links-projetos {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.links-projetos a{
+	font-size: 22px;
+	color: white;
+	flex-basis: auto;
+	margin-bottom: 9px;
+	padding: 8px 12px;
+	background-color: rgb(111, 171, 179);
+}
+
 @media screen and (max-width: 1000px){
 	.lateral,.conteudo,.conteudo-single{width: 100%;}
 	.lateral{padding: 30px 1%;height: auto;}
 	.conteudo{height: 480px}
 }
+
