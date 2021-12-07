@@ -1,103 +1,109 @@
 // Desafio 10
 function techList(array, nome) {
+  array = array.sort();
 
-  if (array.length === 5) {
-    array = array.sort();
+  if (array.length !== 0) {
+    return array.map((el) => ({
+      tech: el,
+      name: nome,
+    }));
   }
-
-  let resultado = '';
-  let novoArray = [];
-  let obj = {
-    tech: array[0],
-    name: nome
-  }
-
-  if (array.length == 0) {
-    resultado = 'Vazio!';
-  } else {
-    for (let a of array) {
-      obj = {
-        tech: a,
-        name: nome
-      }
-      novoArray.push(obj);
-    }
-    resultado = novoArray;
-  }
-  return resultado;
+  return 'Vazio!';
 }
+
+const templatePhone = (array) => {
+  let string = '(';
+  array.forEach((n, i) => {
+    if (i < 2) {
+      string += n;
+    } else if (i < 3) {
+      string += `) ${n}`;
+    } else if (i < 7) {
+      string += n;
+    } else if (i < 8) {
+      string += `-${n}`;
+    } else {
+      string += n;
+    }
+  });
+  return string;
+};
+
+const checkMenorZero = (array) => array.some((n) => n < 0 || n > 9);
+
+const checkRepeat = (array) => {
+  const newArray = array.map((n) => n.toString());
+
+  const res = newArray.reduce((acc, atual) => {
+    acc[atual] = (acc[atual] || 0) + 1;
+    return acc;
+  }, {});
+  return Object.values(res).some((num) => num >= 3);
+};
 
 // Desafio 11
 function generatePhoneNumber(array) {
-  let digito = '';
-  let group1 = '';
-  let group2 = '';
-  let cont = 0;
-  let resultado;
-
   if (array.length !== 11) {
-    resultado = 'Array com tamanho incorreto.';
-  } else {
-    for (let n = 0; n < array.length; n++) {
-      if (array[n] < 0 || array[n] > 9) {
-        resultado = 'não é possível gerar um número de telefone com esses valores';
-        break;
-      } else {
-        for (let i = 0; i < array.length; i++) {
-          if (array[i] < 0 || array[i] > 9) {
-          } else if (array[n] == array[i]) {
-            cont++;
-          }
-        }
-        if (cont >= 3) {
-          resultado = 'não é possível gerar um número de telefone com esses valores';
-          break;
-        } else {
-          if (n < 2) {
-            digito += array[n];
-          } else if (n > 1 && n <= 6) {
-            group1 += array[n];
-          } else if (n > 6) {
-            group2 += array[n];
-          }
-        }
-        resultado = '(' + digito + ')' + ' ' + group1 + '-' + group2;
-        cont = '';
-      }
-    }
+    return 'Array com tamanho incorreto.';
+  } if (checkMenorZero(array) || checkRepeat(array)) {
+    return 'não é possível gerar um número de telefone com esses valores';
   }
-  return resultado;
+  return templatePhone(array);
 }
+
+const triangBmenosC = (a, b, c) => {
+  const absBc = Math.abs(b - c);
+
+  if (absBc < a && a >= (b + c)) {
+    return false;
+  }
+  return true;
+};
+
+const triangAmenosC = (a, b, c) => {
+  const absAc = Math.abs(a - c);
+
+  if (absAc < b && b >= (a + c)) {
+    return false;
+  }
+  return true;
+};
+
+const triangAmenosB = (a, b, c) => {
+  const absAb = Math.abs(a - b);
+
+  if (absAb < c && c >= (a + c)) {
+    return false;
+  }
+  return true;
+};
 
 // Desafio 12
 function triangleCheck(a, b, c) {
-  abs_b_c = Math.abs(b - c);
-  abs_a_c = Math.abs(a - c);
-  abs_a_b = Math.abs(a - b);
-
-  if (abs_b_c < a && a >= (b + c) || abs_a_c < b && b >= (a + c) || abs_a_b < c && c >= (a + c)) {
-    resultado = false;
-  } else {
-    resultado = true;
+  if (triangBmenosC(a, b, c) && triangAmenosC(a, b, c) && triangAmenosB(a, b, c)) {
+    return true;
   }
-  return resultado;
+  return false;
 }
+
+const searchString = (string) => {
+  let soma = 0;
+  const res = string.split('').filter((s) => !s.search(/[1-9]/)).map((str) => Number(str));
+  res.forEach((n) => {
+    soma += n;
+  });
+  return soma;
+};
 
 // Desafio 13
 function hydrate(string) {
-  let soma = 0;
+  let soma = searchString(string);
   let resultado = '';
 
-  for (let s of string) {
-    console.log(s);
-    if (s == '1' || s == '2' || s == '3' || s == '4' || s == '5' || s == '6' || s == '7' || s == '8' || s == '9') {
-      soma += Number(s);
-    }
-  }
   if (soma > 1) {
-    resultado = soma + ' copos de água';
+    resultado = `${soma} copos de água`;
   } else {
-    resultado = soma + ' copo de água';
+    resultado = `${soma} copo de água`;
   }
   return resultado;
 }
