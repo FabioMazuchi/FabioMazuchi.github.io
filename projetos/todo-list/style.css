@@ -58,8 +58,10 @@ p {
 input {
   margin-bottom: 8px;
   padding: 5px;
-  border: none;
+  border: 2px solid #8aa4c5;
   border-radius: 3px;
+  background-color: #2E3138;
+  color: #bbd0ec;
 }
 
 input:focus {
@@ -95,4 +97,16 @@ ol li {
   margin: 6px auto;
   border-radius: 4px;
   padding: 4px;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: #bbd0ec;
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  color: #bbd0ec;
+}
+
+::placeholder {
+  color: #bbd0ec;
 }
