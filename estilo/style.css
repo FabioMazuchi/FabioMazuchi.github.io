@@ -121,7 +121,7 @@ footer a {
 
 .links-projetos {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
 	text-align: center;
 }
