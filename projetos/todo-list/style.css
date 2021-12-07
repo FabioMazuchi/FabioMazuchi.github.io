@@ -78,6 +78,11 @@ input:focus {
   margin: 0 2px;
   background-color: #77a0d6;
   border: none;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #8aa4c5;
 }
 
 ol {
