@@ -5,6 +5,10 @@
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .center {
   max-width: 1100px;
   margin: 0 auto;
@@ -16,8 +20,11 @@ body, html {
 }
 
 header {
-	padding: 12px 0;
-	background-color: blue;
+  width: 100%;
+  top: 0;
+  position: fixed;
+	padding: 16px 0;
+	background-color: #2C231E;
 }
 
 header .center {
@@ -43,7 +50,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 8px;
+  margin: 0 12px;
 }
 
 nav ul li a {
@@ -52,11 +59,15 @@ nav ul li a {
 } 
 
 ul li a:hover {
-	color: rgb(224, 222, 222);
+	color: rgb(207, 201, 201);
 }
 
 section {
   margin: 50px 0;
+}
+
+section.user {
+  margin-top: 110px;
 }
 
 .user .center{
@@ -66,8 +77,10 @@ section {
 
 h2 {
   margin-bottom: 30px;
-  font-size: 35px;
+  font-size: 45px;
+  font-weight: lighter;
   border-bottom: 1px solid;
+  color: #2C231E;
 }
 
 .sobre-user {
@@ -78,21 +91,26 @@ h2 {
 }
 
 img {
-  border-radius: 6px;
+  border-radius: 8px;
   width: 300px;
   height: 280px;
-  border: 2px solid
+  border: 2px solid #2C231E;
 }
 
 .user p {
 	max-width: 65%;
-	line-height: 40px;
+	line-height: 45px;
 	font-size: 27px;
+  color: #9A9582;
+}
+
+.user a {
+  color: #9A9582;
 }
 
 .skills {
-  background-color: rgb(101, 184, 133);
-  padding: 30px 0;
+  background-color: #9A9582;
+  padding: 40px 0;
 }
 
 .skills .center {
@@ -103,40 +121,61 @@ img {
 .out {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .single {
   width: 150px;
-  background-color: blueviolet;
+  background-color: #2C231E;
   padding: 18px 0;
 	display: flex;
   flex-wrap: wrap;
   align-items: center;
 	flex-direction: column;
   justify-content: center;
-  margin: 0 20px 20px 0;
+  margin-bottom: 10px;
   border-radius: 6px;
 } 
 
 .single i {
   font-size: 45px;
   margin-bottom: 6px;
+  color: #903B61;
 }
 
-.single-skill span {
-  font-size: 20px;
+.single span {
+  font-size: 18px;
+  color: #903B61;
 }
 
 section.projetos i  {
-  color: black;
+  color: #903B61;
   font-size: 34px;
   margin-bottom: 8px;
 }
 
 section.projetos span {
-  color: black;
-  font-size: 22px;
+  color: #903B61;
+  font-size: 18px;
 } 
+
+footer {
+  padding: 20px 0;
+  background-color: #2C231E;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  color: #9A9582;
+  font-size: 20px;
+}
+
+footer a {
+  color: #9A9582;
+  font-style: italic;
+  font-weight: 600;
+}
 
  @media screen and (max-width: 550px) {
    header .center {
@@ -145,7 +184,7 @@ section.projetos span {
    }
    header nav {
      margin-top: 5px;
-   }
+   } 
  }
 
  @media screen and (max-width: 930px) {
