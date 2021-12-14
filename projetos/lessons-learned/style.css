@@ -8,17 +8,18 @@
   clear: both;
 }
 
-.lado-esquerdo {
+.left {
   float: left;
 }
 
-.lado-direito {
+.right {
   float: right;
 }
 
 .center {
   max-width: 1200px;
   margin: auto;
+  padding: 0 2%;
 }
 
 body {
@@ -133,5 +134,28 @@ footer {
   color: white;
   text-decoration: none;
   font-weight: 400;
+}
+
+@media screen and (max-width: 650px) {
+  .fabio {
+    width: 60%;
+  }
+  .aprendizado-single {
+    width: 100%;
+    float: none;
+  }
+  #titulo, nav {
+    width: 100%;
+    text-align: center;
+  }
+  #titulo {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  table {
+    display: none;
+  }
 }
 
