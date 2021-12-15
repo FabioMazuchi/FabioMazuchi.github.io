@@ -1,6 +1,6 @@
 const entrar = document.querySelector('.entrar');
-const email = document.querySelector('.email');
-const senha = document.querySelector('.senha');
+const email = document.querySelector('input[name=email]');
+const senha = document.querySelector('input[name=password]');
 const checkbox = document.querySelector('#agreement');
 const btn = document.querySelector('#submit-btn');
 const textarea = document.querySelector('#textarea');
@@ -13,6 +13,7 @@ function login() {
     window.alert('Email ou senha inválidos.');
   }
 }
+
 entrar.addEventListener('click', login);
 
 function habilitarBotao() {
