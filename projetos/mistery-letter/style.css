@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+.center {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 2%;
+}
+
 html {
   height: 100%;
 }
@@ -19,11 +25,14 @@ body {
   background-position: center;
 }
 
-header {
+header{
   width: 100%;
-  display: flex;
   background-color: #364B54;
-  padding: 9px 120px 9px 80px;
+  padding: 9px 0;
+}
+
+header .center {
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -41,7 +50,7 @@ h1 {
   font-weight: lighter;
 }
 
-div {
+.div {
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -153,17 +162,20 @@ button {
 }
 
 @media screen and (max-width: 630px) {
-  header {
-    flex-direction: column;
-    justify-content: center;
-  }
-  div {
+  .div {
     width: 97%;
   }
 }
 
 @media screen and (max-width: 460px) {
   h1 {
-    font-size: 18px;
+    font-size: 22px;
+  }
+}
+
+
+@media screen and (max-width: 330px) {
+  header .center {
+    flex-direction: column;
   }
 }
