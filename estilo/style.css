@@ -101,7 +101,7 @@ img {
 	max-width: 65%;
 	line-height: 45px;
 	font-size: 27px;
-  color: #9A9582;
+  color: #858174;
 }
 
 .user a {
@@ -140,12 +140,12 @@ img {
 .single i {
   font-size: 45px;
   margin-bottom: 6px;
-  color: #903B61;
+  color: white;
 }
 
 .single span {
   font-size: 18px;
-  color: #903B61;
+  color: white;
 }
 
 section.projetos i  {
@@ -167,12 +167,12 @@ footer {
 }
 
 footer p {
-  color: #9A9582;
+  color: white;
   font-size: 20px;
 }
 
 footer a {
-  color: #9A9582;
+  color: white;
   font-style: italic;
   font-weight: 600;
 }
@@ -184,7 +184,16 @@ footer a {
    }
    header nav {
      margin-top: 5px;
-   } 
+   }
+   .user p {
+    font-size: 20px;
+  } 
+  footer p {
+    text-align: center;
+  }
+  section.projetos span {
+    font-size: 16px;
+  }
  }
 
  @media screen and (max-width: 930px) {
@@ -195,10 +204,10 @@ footer a {
     width: 80%;
     margin-bottom: 15px;
   }
-  
   .user p {
     max-width: 100%;
     line-height: 40px;
     font-size: 27px;
+    text-align: center;
   } 
 }
