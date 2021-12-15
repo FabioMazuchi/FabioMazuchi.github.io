@@ -140,12 +140,12 @@ img {
 .single i {
   font-size: 45px;
   margin-bottom: 6px;
-  color: #903B61;
+  color: white;
 }
 
 .single span {
   font-size: 18px;
-  color: #903B61;
+  color: white;
 }
 
 section.projetos i  {
@@ -167,12 +167,12 @@ footer {
 }
 
 footer p {
-  color: #9A9582;
+  color: white;
   font-size: 20px;
 }
 
 footer a {
-  color: #9A9582;
+  color: white;
   font-style: italic;
   font-weight: 600;
 }

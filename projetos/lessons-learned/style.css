@@ -151,6 +151,9 @@ footer {
   #titulo {
     font-size: 22px;
   }
+  footer {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1050px) {
