@@ -85,9 +85,12 @@ h1 {
 }
 
 .cart__item {
+  padding-left: 30px;
   display: flex;
   align-items: center;
-  margin: 7px 0;
+  margin: 9px 0;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
 
 .cart__item img {
@@ -98,12 +101,24 @@ h1 {
 .cart__item div {
   display: flex;
   flex-direction: column;
-  flex-basis: 50%;
+  flex-basis: 90%;
 }
 
 .cart__item div span {
   font-size: 15px;
   margin-bottom: 2px;
+}
+
+.cart__item div span:nth-last-of-type(1) {
+  font-weight: 600;
+}
+
+.cart__item  p {
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-self: flex-start;
+  font-size: 18px;
 }
 
 .cart .cart__title {
@@ -146,3 +161,11 @@ p {
   font-size: 22px;
 }
 
+@media screen and (max-width: 400px) {
+  .cart__items div {
+    flex-basis: 60%;
+  }
+  .cart__item {
+    padding: 0;
+  }
+}

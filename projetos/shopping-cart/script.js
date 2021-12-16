@@ -38,7 +38,7 @@ function createCustomElement(element, className, innerText) {
 
 function cartItemClickListener(event) {
   const array = ol.children;
-  const select = event.target;
+  const select = event.target.parentNode;
   select.classList.add('clicou');
 
   for (let i = 0; i < array.length; i += 1) {
@@ -51,12 +51,32 @@ function cartItemClickListener(event) {
 
 function createCartItemElement({ id: sku, title: name, price: salePrice, thumbnail }) {
   const li = document.createElement('li');
+  const span__sku = document.createElement('span');
+  const span__name = document.createElement('span');
+  const span__price = document.createElement('span');
+  const p = document.createElement('p');
   
+  const div = document.createElement('div');
+
+  li.appendChild(createProductImageElement(thumbnail));
+  
+  span__sku.innerText = sku;
+  div.appendChild(span__sku);
+  
+  span__name.innerText = name;
+  div.appendChild(span__name);
+ 
+  span__price.innerText = salePrice.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'});
+  div.appendChild(span__price);
+
   li.className = 'cart__item';
   li.value = salePrice;
-  li.appendChild(createProductImageElement(thumbnail));
-  // li.innerText = `SKU: ${sku} | NAME: ${name} | PRICE: ${salePrice.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`;
-  li.addEventListener('click', cartItemClickListener);
+  li.appendChild(div);
+
+  p.innerText = 'x';
+  li.appendChild(p);
+  
+  p.addEventListener('click', cartItemClickListener);
   return li;
 }
 
