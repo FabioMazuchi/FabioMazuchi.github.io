@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <title>Shopping Cart</title>
+    <link rel="stylesheet" href="../../estilo/all.css">
     <link rel="stylesheet" href="style.css" />
     <script src="./helpers/fetchItem.js" defer></script>
     <script src="./helpers/fetchProducts.js" defer></script>
@@ -18,11 +19,16 @@
   <body>
     <header>
       <h1>Fabio's Store</h1>
+      <i class="fas fa-shopping-cart"></i>
     </header>
     <section class="container">
       <section class="items"></section>
-      <section class="cart">
-        <span class="cart__title">Carrinho de compras</span>
+      <section class="cart">    
+        <div class="cart__header">
+          <p></p>
+          <h2 class="cart__title">Carrinho de Compras</h2>
+          <i class="far fa-caret-square-left voltar"></i>
+        </div>
         <div class="cart__items__div">
           <button class="empty-cart">Esvaziar carrinho</button>
           <ol class="cart__items"></ol>

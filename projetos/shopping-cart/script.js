@@ -1,6 +1,23 @@
 const ol = document.querySelector('.cart__items');
 const somaSpan = document.querySelector('.total-price');
 const esvaziarBtn = document.querySelector('.empty-cart');
+const cartIcon = document.getElementsByTagName('i');
+const carrinho = document.querySelector('.cart');
+const voltar = document.querySelector('.voltar');
+
+const removerCart = () => {
+  carrinho.style.display = 'none';
+  console.log('oi');
+}
+
+voltar.addEventListener('click', removerCart);
+
+const exibirCarrinho = () => {
+  carrinho.style.display = 'block';
+  console.log('carrinho');
+};
+
+cartIcon[0].addEventListener('click', exibirCarrinho);
 
 const somar = () => {
   const array = ol.children;
