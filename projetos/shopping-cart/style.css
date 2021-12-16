@@ -2,29 +2,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Quicksand, sans-serif;
 }
 
 body {
-  background-color: rgb(136, 98, 98);
+  background-color: #C4DCE8;
 }
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(34, 107, 82);
+  background-color: #0F769F;
   padding: 12px 30px;
   margin-bottom: 15px;
+  color: #F7D482;
+  font-family: 'Playfair Display', serif;
 }
 
 header i {
   font-size: 25px;
-  color: white;
+  cursor: pointer;
 }
 
 h1 {
-  color: white;
   font-style: italic;
 }
 
@@ -69,7 +69,7 @@ h1 {
 }
 
 .item .item__add {
-  background-color: rgb(48, 139, 107);
+  background-color: #0F769F;
   border: 0;
   cursor: pointer;
   margin: 0;
@@ -150,7 +150,7 @@ h1 {
   font-size: 17px;
   font-weight: 600;
   color: white;
-  background-color: black;
+  background-color: #0F769F;
 }
 
 .loading {
@@ -166,13 +166,18 @@ h1 {
 }
 
 .item__price {
-  margin: 0 0 6px 6px;
+  margin: 6px 6px;
+  font-style: italic;
 }
 
 p {
   font-weight: 600;
   margin: 9px 0 16px;
   font-size: 22px;
+}
+
+.cart__items__div p {
+  font-size: 18px;
 }
 
 @media screen and (max-width: 400px) {
@@ -186,6 +191,6 @@ p {
     font-size: 15pt;
   }
   .item {
-    width: 97%;
+    width: 90%;
   }
 }
