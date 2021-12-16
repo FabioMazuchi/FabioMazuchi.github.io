@@ -6,11 +6,9 @@ const somar = () => {
   const array = ol.children;
   let soma = 0;
   for (let i = 0; i < array.length; i += 1) {
-    const pos = array[i].innerText.indexOf('$');
-    const res = Number(array[i].innerText.substring(pos + 1));
-    soma += res;
+    soma += array[i].value;
   }
-  somaSpan.innerText = soma;
+  somaSpan.innerText = soma.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'});
 };
 
 const esvaziarCarrinho = () => {
@@ -18,7 +16,6 @@ const esvaziarCarrinho = () => {
 
   for (let i = 0; i < array.length; i += i) {
     array[i].remove();  
-    console.log(array.length);
   }
   somar();
 };
@@ -52,10 +49,13 @@ function cartItemClickListener(event) {
   somar();
 }
 
-function createCartItemElement({ id: sku, title: name, price: salePrice }) {
+function createCartItemElement({ id: sku, title: name, price: salePrice, thumbnail }) {
   const li = document.createElement('li');
+  
   li.className = 'cart__item';
-  li.innerText = `SKU: ${sku} | NAME: ${name} | PRICE: $${salePrice}`;
+  li.value = salePrice;
+  li.appendChild(createProductImageElement(thumbnail));
+  // li.innerText = `SKU: ${sku} | NAME: ${name} | PRICE: ${salePrice.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`;
   li.addEventListener('click', cartItemClickListener);
   return li;
 }
@@ -89,7 +89,7 @@ function createProductItemElement({ id: sku, title: name, thumbnail: image, pric
   section.appendChild(createCustomElement('span', 'item__sku', sku));
   section.appendChild(createCustomElement('span', 'item__title', name));
   section.appendChild(createProductImageElement(image));
-  section.appendChild(createCustomElement('span', 'item__price', `R$${price}`));
+  section.appendChild(createCustomElement('span', 'item__price', `${price.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`));
   section.appendChild(createCustomElement('button', 'item__add', 'Adicionar ao carrinho!'));
   items.appendChild(section);
 }

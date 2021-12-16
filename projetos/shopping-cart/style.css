@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: rgb(136, 98, 98);
 }
 
 header {
@@ -16,8 +16,8 @@ header {
 }
 
 h1 {
-  text-align: center;
   color: white;
+  font-style: italic;
 }
 
 .container {
@@ -29,7 +29,6 @@ h1 {
 
 .items {
   display: flex;
-  flex-basis: 70%;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -56,7 +55,9 @@ h1 {
 }
 
 .item .item__image {
-  width: 100%;
+  margin: auto;
+  width: 80%;
+  height: 100px;
 }
 
 .item .item__add {
@@ -66,48 +67,61 @@ h1 {
   margin: 0;
   padding: 5px;
   color: white;
+  font-size: 16px;
 }
 
 .cart {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: azure;
+  padding: 8px;
   display: flex;
-  flex-basis: 30%;
-  flex-flow: column wrap;
-  background-color: rgb(56, 116, 95);
-  padding: 10px;
-  margin-right: 20px;
-  border-radius: 8px;
-  color: white;
+  flex-direction: column;
 }
 
-ol {
+.cart__items {
   list-style-type: none;
 }
 
 .cart__item {
-  margin-bottom: 16px;
-  background-color: white;
-  padding: 8px;
-  border-radius: 4px;
-  cursor: pointer;
-  color: rgb(34, 107, 82);
-  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin: 7px 0;
+}
+
+.cart__item img {
+  margin-right: 7px;
+  width: 100px;
+}
+
+.cart__item div {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.cart__item div span {
+  font-size: 15px;
+  margin-bottom: 2px;
 }
 
 .cart .cart__title {
-  flex-basis: 1;
   font-size: 22pt;
   text-align: center;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .empty-cart {
   border-radius: 4px;
   border: 0;
-  padding: 4px 0;
+  padding: 4px 8px;
+  margin-bottom: 10px;
   font-size: 17px;
   font-weight: 600;
-  color: rgb(34, 107, 82);
+  color: white;
+  background-color: black;
 }
 
 .loading {
@@ -131,3 +145,4 @@ p {
   margin: 9px 0 16px;
   font-size: 22px;
 }
+

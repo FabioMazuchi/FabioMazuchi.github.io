@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-    <title>Fabio Augusto Mazuchi</title>
+    <title>Shopping Cart</title>
     <link rel="stylesheet" href="style.css" />
     <script src="./helpers/fetchItem.js" defer></script>
     <script src="./helpers/fetchProducts.js" defer></script>
@@ -17,15 +17,18 @@
   </head>
   <body>
     <header>
-      <h1>Trybe Virtual Store</h1>
+      <h1>Fabio's Store</h1>
     </header>
     <section class="container">
       <section class="items"></section>
       <section class="cart">
         <span class="cart__title">Carrinho de compras</span>
-        <button class="empty-cart">Esvaziar carrinho</button>
-        <p>Total R$<span class="total-price">R$89</span></p>
-        <ol class="cart__items"></ol>
+        <div class="cart__items__div">
+          <button class="empty-cart">Esvaziar carrinho</button>
+          <ol class="cart__items"></ol>
+          <hr>
+          <p>Total <span class="total-price"></span></p>
+        </div>
       </section>
     </section>
   </body>
