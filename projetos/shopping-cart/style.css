@@ -82,7 +82,7 @@ h1 {
   position: absolute;
   top: 0;
   width: 100%;
-  background-color: azure;
+  background-color: #F7D482;
   padding: 8px;
   display: flex;
   flex-direction: column;
