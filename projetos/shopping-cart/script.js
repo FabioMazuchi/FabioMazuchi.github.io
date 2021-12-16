@@ -1,16 +1,31 @@
 const ol = document.querySelector('.cart__items');
 const somaSpan = document.querySelector('.total-price');
 const esvaziarBtn = document.querySelector('.empty-cart');
+const cartIcon = document.getElementsByTagName('i');
+const carrinho = document.querySelector('.cart');
+const voltar = document.querySelector('.voltar');
+
+const removerCart = () => {
+  carrinho.style.display = 'none';
+  console.log('oi');
+}
+
+voltar.addEventListener('click', removerCart);
+
+const exibirCarrinho = () => {
+  carrinho.style.display = 'block';
+  console.log('carrinho');
+};
+
+cartIcon[0].addEventListener('click', exibirCarrinho);
 
 const somar = () => {
   const array = ol.children;
   let soma = 0;
   for (let i = 0; i < array.length; i += 1) {
-    const pos = array[i].innerText.indexOf('$');
-    const res = Number(array[i].innerText.substring(pos + 1));
-    soma += res;
+    soma += array[i].value;
   }
-  somaSpan.innerText = soma;
+  somaSpan.innerText = soma.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'});
 };
 
 const esvaziarCarrinho = () => {
@@ -18,7 +33,6 @@ const esvaziarCarrinho = () => {
 
   for (let i = 0; i < array.length; i += i) {
     array[i].remove();  
-    console.log(array.length);
   }
   somar();
 };
@@ -41,7 +55,7 @@ function createCustomElement(element, className, innerText) {
 
 function cartItemClickListener(event) {
   const array = ol.children;
-  const select = event.target;
+  const select = event.target.parentNode;
   select.classList.add('clicou');
 
   for (let i = 0; i < array.length; i += 1) {
@@ -52,11 +66,34 @@ function cartItemClickListener(event) {
   somar();
 }
 
-function createCartItemElement({ id: sku, title: name, price: salePrice }) {
+function createCartItemElement({ id: sku, title: name, price: salePrice, thumbnail }) {
   const li = document.createElement('li');
+  const span__sku = document.createElement('span');
+  const span__name = document.createElement('span');
+  const span__price = document.createElement('span');
+  const p = document.createElement('p');
+  
+  const div = document.createElement('div');
+
+  li.appendChild(createProductImageElement(thumbnail));
+  
+  span__sku.innerText = sku;
+  div.appendChild(span__sku);
+  
+  span__name.innerText = name;
+  div.appendChild(span__name);
+ 
+  span__price.innerText = salePrice.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'});
+  div.appendChild(span__price);
+
   li.className = 'cart__item';
-  li.innerText = `SKU: ${sku} | NAME: ${name} | PRICE: $${salePrice}`;
-  li.addEventListener('click', cartItemClickListener);
+  li.value = salePrice;
+  li.appendChild(div);
+
+  p.innerText = 'x';
+  li.appendChild(p);
+  
+  p.addEventListener('click', cartItemClickListener);
   return li;
 }
 
@@ -89,7 +126,7 @@ function createProductItemElement({ id: sku, title: name, thumbnail: image, pric
   section.appendChild(createCustomElement('span', 'item__sku', sku));
   section.appendChild(createCustomElement('span', 'item__title', name));
   section.appendChild(createProductImageElement(image));
-  section.appendChild(createCustomElement('span', 'item__price', `R$${price}`));
+  section.appendChild(createCustomElement('span', 'item__price', `${price.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`));
   section.appendChild(createCustomElement('button', 'item__add', 'Adicionar ao carrinho!'));
   items.appendChild(section);
 }
