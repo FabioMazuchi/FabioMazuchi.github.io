@@ -86,7 +86,6 @@ h2 {
 .sobre-user {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -95,6 +94,7 @@ img {
   width: 300px;
   height: 280px;
   border: 2px solid #2C231E;
+  margin-right: 12px;
 }
 
 .user p {
@@ -187,7 +187,8 @@ footer a {
      margin-top: 5px;
    }
    .user p {
-    font-size: 20px;
+    font-size: 23px;
+    line-height: 30px;
   } 
   footer p {
     text-align: center;
@@ -195,20 +196,21 @@ footer a {
   section.projetos span {
     font-size: 16px;
   }
+  h2 {
+    font-size: 32px;
+  }
  }
 
- @media screen and (max-width: 930px) {
+ @media screen and (max-width: 700px) {
   .sobre-user {
-    justify-content: center;
+    flex-direction: column;
   }
   img {
     width: 80%;
     margin-bottom: 15px;
   }
-  .user p {
+  .sobre-user p {
     max-width: 100%;
-    line-height: 40px;
-    font-size: 27px;
     text-align: center;
-  } 
+  }
 }
