@@ -68,7 +68,7 @@ function cartItemClickListener(event) {
 
 function createCartItemElement({ id: sku, title: name, price: salePrice, thumbnail }) {
   const li = document.createElement('li');
-  const span__sku = document.createElement('span');
+  // const span__sku = document.createElement('span');
   const span__name = document.createElement('span');
   const span__price = document.createElement('span');
   const p = document.createElement('p');
@@ -77,8 +77,8 @@ function createCartItemElement({ id: sku, title: name, price: salePrice, thumbna
 
   li.appendChild(createProductImageElement(thumbnail));
   
-  span__sku.innerText = sku;
-  div.appendChild(span__sku);
+  // span__sku.innerText = sku;
+  // div.appendChild(span__sku);
   
   span__name.innerText = name;
   div.appendChild(span__name);

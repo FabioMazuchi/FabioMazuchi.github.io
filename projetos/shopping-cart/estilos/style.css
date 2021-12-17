@@ -82,7 +82,7 @@ h1 {
   position: absolute;
   top: 0;
   width: 100%;
-  background-color: #F7D482;
+  background-color: #e4e2de;
   padding: 8px;
   display: flex;
   flex-direction: column;
@@ -117,6 +117,7 @@ h1 {
 .cart__item img {
   margin-right: 7px;
   width: 100px;
+  height: 70px;
 }
 
 .cart__item div {
@@ -143,6 +144,8 @@ h1 {
 }
 
 .empty-cart {
+  margin: auto;
+  display: block;
   border-radius: 4px;
   border: 0;
   padding: 4px 8px;
