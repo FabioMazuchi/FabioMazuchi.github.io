@@ -20,8 +20,24 @@ header {
 }
 
 header i {
+  position: relative;
   font-size: 25px;
   cursor: pointer;
+}
+
+header span {
+  top: -5px;
+  right: -8px;
+  position: absolute;
+  text-align: center;
+  line-height: 15px;
+  font-size: 12px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: rgb(206, 86, 86);
+  color: white;
+  display: none;
 }
 
 h1 {
@@ -78,11 +94,15 @@ h1 {
   font-size: 16px;
 }
 
+.item__add, .empty-cart:hover {
+  background-color: #2e8db3;
+}
+
 .cart {
   position: absolute;
   top: 0;
   width: 100%;
-  background-color: #F7D482;
+  background-color: #e4e2de;
   padding: 8px;
   display: flex;
   flex-direction: column;
@@ -96,6 +116,11 @@ h1 {
   justify-content: space-between;
 }
 
+.cart__header p {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
 .cart__header  i {
   font-size: 22px;
   cursor: pointer;
@@ -106,7 +131,7 @@ h1 {
 }
 
 .cart__item {
-  padding-left: 30px;
+  padding-right: 10px;
   display: flex;
   align-items: center;
   margin: 9px 0;
@@ -117,6 +142,7 @@ h1 {
 .cart__item img {
   margin-right: 7px;
   width: 100px;
+  height: 70px;
 }
 
 .cart__item div {
@@ -134,15 +160,18 @@ h1 {
   font-weight: 600;
 }
 
-.cart__item  p {
+.cart__item  i {
   cursor: pointer;
-  font-size: 14px;
+  font-size: 18px;
   display: flex;
   align-self: flex-start;
   font-size: 18px;
+  color: rgb(233, 90, 65);
 }
 
 .empty-cart {
+  margin: auto;
+  display: block;
   border-radius: 4px;
   border: 0;
   padding: 4px 8px;
@@ -180,7 +209,7 @@ p {
   font-size: 18px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 415px) {
   .cart__items div {
     flex-basis: 60%;
   }
@@ -192,5 +221,8 @@ p {
   }
   .item {
     width: 90%;
+  }
+  .cart__header p {
+    display: none;
   }
 }
