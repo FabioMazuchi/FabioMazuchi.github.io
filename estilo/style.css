@@ -5,6 +5,67 @@
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+body, html {
+  height: 100%;
+  display: flex;
+}
+
+main {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #211A1E; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, #9299dd, rgb(50, 99, 111));
+}
+
+.profile {
+  width: 98%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img {
+  width: 310px;
+  height: 300px;
+  border-radius: 50%;
+  border:  3px solid #c4b5bd;
+}
+
+.info {
+  width: 60%;
+  color: white;
+}
+
+h1 {
+  font-family: 'Corinthia', cursive;
+  margin-bottom: 20px;
+  font-size: 45px;
+}
+
+p {
+  line-height: 40px;
+  font-size: 23px;
+}
+
+.info a {
+  color: white;
+  text-decoration: none;
+}
+
+.button button{
+  padding: 4px;
+  cursor: pointer;
+}
+
+.projetos {
+  display: none;
+  width: 60%;
+}
+
+/* 
 html {
   scroll-behavior: smooth;
 }
@@ -213,4 +274,4 @@ footer a {
     max-width: 100%;
     text-align: center;
   }
-}
+} */
