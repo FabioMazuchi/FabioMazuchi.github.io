@@ -1,12 +1,17 @@
 const btnProjetos = document.querySelector("#projetos");
-const divInfo = document.querySelector(".info");
+const btnSobre = document.querySelector("#sobre");
+const divInfo = document.querySelector(".sobre");
 const divProjetos = document.querySelector(".projetos");
 
-const moveDiv = () => {
-	divInfo.style.display = 'none';
-	divProjetos.style.display = 'block';
-  // console.log(divProjetos);
+const addInfo = () => {
+	divInfo.style.display = 'block';
+	divProjetos.style.display = 'none';
 };
 
-btnProjetos.addEventListener("click", moveDiv);
-console.log(btnProjetos);
+const addProjeto = () => {
+	divInfo.style.display = 'none';
+	divProjetos.style.display = 'block';
+};
+
+btnProjetos.addEventListener("click", addProjeto);
+btnSobre.addEventListener('click', addInfo);
