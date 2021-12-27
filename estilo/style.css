@@ -84,7 +84,7 @@ a {
 }
 
 main {
-  min-height: 300px;
+  min-height: 330px;
 }
 
 section {
@@ -119,6 +119,7 @@ section {
   border-radius: 6px;
   text-align: center;
   margin-bottom: 10px;
+  box-shadow: 2px 3px 3px #222121;
 } 
 
 .single:hover {
@@ -137,17 +138,6 @@ section {
   font-weight: 200;
   letter-spacing: 2px;
 }
-
-section.projetos i  {
-  color: #903B61;
-  font-size: 34px;
-  margin-bottom: 8px;
-}
-
-section.projetos span {
-  color: white;
-  font-size: 18px;
-} 
 
 .skills {
   width: 90%;
@@ -170,7 +160,7 @@ footer {
 
 footer a {
   margin-right: 20px;
-  font-size: 27px;
+  font-size: 33px;
   color: #903B61;
 }
 
@@ -191,11 +181,14 @@ footer a:hover {
   }
   h2 {
     font-size: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
   p {
     font-size: 25px;
     line-height: 30px;
+  }
+  .buttons {
+    margin-bottom: 10px;
   }
 }
 
@@ -210,4 +203,25 @@ footer a:hover {
     width: 100px;
     height: 80px;
   }
+  .projetos {
+    width: 100%;
+    padding: 0 2%;
+  }
+  .projetos .out {
+    justify-content: space-evenly;
+  }
+  section {
+    width: 98%;
+    padding: 0;
+  }
+  .single {
+    flex-basis: 32%;
+  }
+}
+
+@media screen and (max-width:630px) {
+  .single, .skills .single {
+    flex-basis: 47%;
+  }
+
 }
