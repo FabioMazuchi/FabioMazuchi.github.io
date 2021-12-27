@@ -103,9 +103,8 @@ form#evaluation-form input[type=text], select {
 }
 
 .conteudo {
-	width: 65%;
+	width: 80%;
 	display: flex;
-  flex-wrap: wrap;
 	flex-direction: column;
 }
 
@@ -116,7 +115,8 @@ form#evaluation-form input[type=text], select {
 .conteudo div {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+  flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 input[type=checkbox] {
@@ -184,6 +184,9 @@ footer {
 @media screen and (max-width: 450px) {
   .satisfaction {
     width: 100%;
+  }
+  h2 {
+    font-size: 25px;
   }
 }
 
