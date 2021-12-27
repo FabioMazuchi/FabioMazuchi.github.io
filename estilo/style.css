@@ -84,7 +84,7 @@ a {
 }
 
 main {
-  min-height: 330px;
+  min-height: 310px;
 }
 
 section {
@@ -189,6 +189,9 @@ footer a:hover {
   }
   .buttons {
     margin-bottom: 10px;
+  }
+  footer a {
+    font-size: 22px;
   }
 }
 
