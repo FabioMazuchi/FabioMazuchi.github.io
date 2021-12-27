@@ -84,7 +84,7 @@ a {
 }
 
 main {
-  min-height: 310px;
+  min-height: 315px;
 }
 
 section {
@@ -166,6 +166,21 @@ footer a {
 
 footer a:hover {
   color: #c05a88;
+}
+
+@media screen and (max-width:330px) {
+  header h1 {
+    font-size: 30px;
+  }
+  .single i{
+    font-size: 23px;
+  }
+  .single span {
+    font-size: 14px;
+  }
+  .sobre p {
+    font-size: 19px;
+  }
 }
 
 @media screen and (max-width:470px) {
