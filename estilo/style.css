@@ -94,18 +94,17 @@ section {
   justify-content: center;
   padding: 20px 2%;
   align-items: center;
-  background-color: aqua;
 }
 
 .sobre {
   width: 90%;
-  background-color: azure;
 }
 
 .projetos {
   width: 90%;
   display: none;
   flex-direction: column;
+  background-color: blanchedalmond;
 }
 
 .out {
@@ -115,14 +114,15 @@ section {
 }
 
 .single {
-  flex-basis: 24%;
+  flex-basis: 19%;
+  flex-grow: 1;
   background-color: #5E503F;
   padding: 12px 5px;
 	display: flex;
 	flex-direction: column;
   border-radius: 6px;
-  text-align: center;
-  margin-bottom: 10px;
+  align-items: center;
+  margin: 0 10px 10px 0;
   box-shadow: 2px 3px 3px #222121;
 } 
 
@@ -172,24 +172,6 @@ footer a:hover {
   color: rgb(194, 73, 73);
 }
 
-@media screen and (max-width:330px) {
-  header h1 {
-    font-size: 30px;
-  }
-  .single i{
-    font-size: 23px;
-  }
-  .single span {
-    font-size: 14px;
-  }
-  .sobre p {
-    font-size: 19px;
-  }
-  .buttons button {
-    font-size: 15px;
-  }
-}
-
 @media screen and (max-width:470px) {
   header {
     padding: 10px 0;
@@ -198,15 +180,15 @@ footer a:hover {
     flex-direction: column;
   }
   h1 {
-    font-size: 35px;
+    font-size: 30px;
     margin: 0;
   }
   h2 {
-    font-size: 40px;
+    font-size: 45px;
     margin-bottom: 6px;
   }
   p {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 30px;
   }
   .buttons {
@@ -215,9 +197,22 @@ footer a:hover {
   footer a {
     font-size: 22px;
   }
+  .projetos, .skills, .sobre {
+    width: 100%;
+    padding-left: 10px;
+  }
+  .single i{
+    font-size: 23px;
+  }
+  .single span {
+    font-size: 14px;
+  }
+  .buttons button {
+    font-size: 15px;
+  }
 }
 
-@media screen and (max-width:730px) {
+@media screen and (max-width:760px) {
   header {
     flex-direction: column;
   }
@@ -228,25 +223,7 @@ footer a:hover {
     width: 100px;
     height: 80px;
   }
-  .projetos {
-    width: 100%;
-    padding: 0 2%;
-  }
-  .projetos .out {
-    justify-content: space-evenly;
-  }
-  section {
-    width: 98%;
-    padding: 0;
-  }
   .single {
     flex-basis: 32%;
   }
-}
-
-@media screen and (max-width:630px) {
-  .single, .skills .single {
-    flex-basis: 47%;
-  }
-
 }
