@@ -6,7 +6,6 @@
 }
 
 body {
-  height: 100%;
   position: relative;
   z-index: 0;
   background-image: url(../images/skills.jpg);
@@ -102,7 +101,7 @@ a {
 main {
   position: relative;
   z-index: 3;
-  min-height: 370px;
+  min-height: 420px;
 }
 
 section {
@@ -138,7 +137,7 @@ section {
   border-radius: 6px;
   align-items: center;
   margin: 0 10px 10px 0;
-  box-shadow: 2px 3px 3px #222121;
+  box-shadow: 2px 2px 2px #a7a1a1;
 } 
 
 .single:hover {
@@ -245,22 +244,60 @@ footer a:hover {
   }
 }
 
-@media screen and (min-height:667px) {
-  main{
-    min-height: 460px;
+
+@media screen and (min-height:640px) {
+  body {
+    min-height: 300px;
   }
 }
 
+@media screen and (min-height:720px) {
+  main {
+    min-height: 434px;
+  }
+}
+
+@media screen and (min-height:731px) {
+  body {
+    min-height: 732px;
+  }
+}
+
+@media screen and (min-height:736px) {
+  body {
+    min-height: 738px;
+  }
+}
+
+@media screen and (min-height:800px) {
+  main {
+    min-height: 530px;
+  }
+}
 
 @media screen and (min-height:812px) {
-  main{
-    min-height: 550px;
+  main {
+    min-height: 538px;
+  }
+}
+
+@media screen and (min-height:823px) {
+  body {
+    min-height: 824px;
+  }
+  main {
+    min-height: 540px;
   }
 }
 
 @media screen and (min-height:1024px) {
   main{
-    min-height: 750px;
+    min-height: 754px;
+  }
+} 
+
+@media screen and (min-height: 1366px) {
+  main{
+    min-height: 1100px;
   }
 }
-
