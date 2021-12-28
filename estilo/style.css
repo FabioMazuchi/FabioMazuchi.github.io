@@ -43,11 +43,13 @@ h1 {
 }
 
 .buttons {
+  flex-basis: 35%;
   display: flex;
 }
 
 .buttons button{
-  background-color: #903B61;
+  flex-basis: 20%;
+  background-color: #da3131;
   font-size: 18px;
   color: #F2F4F3;
   padding: 4px 12px;
@@ -58,7 +60,7 @@ h1 {
 }
 
 .buttons button:hover {
-  background-color: #a84a75;
+  background-color: rgb(194, 73, 73);
 }
 
 .sobre {
@@ -92,10 +94,12 @@ section {
   justify-content: center;
   padding: 20px 2%;
   align-items: center;
+  background-color: aqua;
 }
 
 .sobre {
   width: 90%;
+  background-color: azure;
 }
 
 .projetos {
@@ -161,11 +165,11 @@ footer {
 footer a {
   margin-right: 20px;
   font-size: 33px;
-  color: #903B61;
+  color: #da3131;
 }
 
 footer a:hover {
-  color: #c05a88;
+  color: rgb(194, 73, 73);
 }
 
 @media screen and (max-width:330px) {
