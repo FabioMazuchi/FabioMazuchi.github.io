@@ -5,15 +5,29 @@
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-body, html {
+body {
   height: 100%;
+  position: relative;
+  z-index: 0;
+  background-image: url(../images/skills.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-body {
-  background-color: #F2F4F3;
+.overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(37, 39, 37, 0.8);
 }
 
 header {
+  position: relative;
+  z-index: 2;
   padding: 30px 0;
   width: 100%;
   display: flex;
@@ -38,7 +52,7 @@ h1 {
   font-family: 'Corinthia', cursive;
   margin-bottom: 20px;
   font-size: 35px;
-  color: #5E503F;
+  color: white;
   margin-top: 18px;
 }
 
@@ -71,22 +85,24 @@ h2 {
   font-family: 'Corinthia', cursive;
   font-size: 60px;
   margin-bottom: 20px;
-  color: #5E503F;
+  color: white;
 }
 
 p {
   line-height: 40px;
   font-size: 32px;
-  color: #5E503F;
+  color: white;
 }
 
 a {
   text-decoration: none;
-  color: #5E503F;
+  color: white;
 }
 
 main {
-  min-height: 315px;
+  position: relative;
+  z-index: 3;
+  min-height: 370px;
 }
 
 section {
@@ -104,7 +120,6 @@ section {
   width: 90%;
   display: none;
   flex-direction: column;
-  background-color: blanchedalmond;
 }
 
 .out {
@@ -157,6 +172,8 @@ section {
 }
 
 footer {
+  position: relative;
+  z-index: 3;
   padding: 30px 0;
   display: flex;
   justify-content: center;
@@ -165,11 +182,11 @@ footer {
 footer a {
   margin-right: 20px;
   font-size: 33px;
-  color: #da3131;
+  color: white;
 }
 
 footer a:hover {
-  color: rgb(194, 73, 73);
+  color: rgb(196, 187, 187);
 }
 
 @media screen and (max-width:470px) {
@@ -227,3 +244,23 @@ footer a:hover {
     flex-basis: 32%;
   }
 }
+
+@media screen and (min-height:667px) {
+  main{
+    min-height: 460px;
+  }
+}
+
+
+@media screen and (min-height:812px) {
+  main{
+    min-height: 550px;
+  }
+}
+
+@media screen and (min-height:1024px) {
+  main{
+    min-height: 750px;
+  }
+}
+
