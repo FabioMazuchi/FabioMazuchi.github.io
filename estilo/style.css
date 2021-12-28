@@ -130,31 +130,30 @@ section {
 .single {
   flex-basis: 19%;
   flex-grow: 1;
-  background-color: #5E503F;
+  background-color: rgb(212, 208, 208);
   padding: 12px 5px;
 	display: flex;
 	flex-direction: column;
   border-radius: 6px;
   align-items: center;
   margin: 0 10px 10px 0;
-  box-shadow: 2px 2px 2px #a7a1a1;
+  box-shadow: -2px 2px 4px #080808;
 } 
 
 .single:hover {
-  background-color: #6d5d4a;
+  background-color: rgb(187, 182, 182);
 }
 
 .single i {
-  font-size: 30px;
+  font-size: 36px;
   margin-bottom: 6px;
-  color: #F2F4F3;
+  color: #0B0907;
 }
 
 .single span {
-  font-size: 17px;
-  color: #F2F4F3;
-  font-weight: 200;
-  letter-spacing: 2px;
+  font-size: 22px;
+  color: #0B0907;
+  letter-spacing: 1px;
 }
 
 .skills {
@@ -167,7 +166,15 @@ section {
 }
 
 .skills .single:hover {
-  background-color: #5E503F;
+  background-color: rgb(212, 208, 208);
+}
+
+.skills img {
+  width: 60px;
+  height: 50px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 4px;
 }
 
 footer {
@@ -189,6 +196,10 @@ footer a:hover {
 }
 
 @media screen and (max-width:470px) {
+  .skills img {
+    width: 30px;
+    height: 30px;
+  }
   header {
     padding: 10px 0;
   }
