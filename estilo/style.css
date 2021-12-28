@@ -161,9 +161,9 @@ section {
   display: none;
 }
 
-.skills .single {
+/* .skills .single {
   flex-basis: 24%;
-}
+} */
 
 .skills .single:hover {
   background-color: rgb(212, 208, 208);
