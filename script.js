@@ -5,7 +5,6 @@ const divInfo = document.querySelector(".sobre");
 const divProjetos = document.querySelector(".projetos");
 const divSkills = document.querySelector(".skills");
 const body = document.getElementsByTagName('body');
-console.log(body[0]);
 
 const trocaFundoSobre = () => {
 	body[0].style.backgroundImage = 'url(../images/sobre.png)'
