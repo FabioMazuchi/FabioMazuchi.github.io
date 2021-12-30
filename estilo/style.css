@@ -74,7 +74,7 @@ h1 {
 }
 
 .buttons button:hover {
-  background-color: rgb(194, 73, 73);
+  background-color: #b82727;
 }
 
 .sobre {
@@ -190,7 +190,7 @@ footer a {
 }
 
 footer a:hover {
-  color: rgb(196, 187, 187);
+  color: rgb(175, 172, 172);
 }
 
 @media screen and (max-width:470px) {
@@ -210,11 +210,11 @@ footer a:hover {
   }
   h2 {
     font-size: 30px;
-    margin-bottom: 6px;
+    margin-bottom: 16px;
   }
   p {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 40px;
   }
   .buttons {
     margin-bottom: 10px;
