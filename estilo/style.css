@@ -164,7 +164,7 @@ section {
   background-color: rgb(212, 208, 208);
 }
 
-.skills img {
+.skills img, .star-wars {
   width: 45px;
   height: 35px;
   border: 0;
