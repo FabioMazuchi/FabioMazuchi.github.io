@@ -7,7 +7,7 @@ const divSkills = document.querySelector(".skills");
 const body = document.getElementsByTagName('body');
 
 const trocaFundoSobre = () => {
-	body[0].style.backgroundImage = 'url(../images/sobre.png)'
+	body[0].style.backgroundImage = 'url(../images/azulBranco.webp)'
 }
 
 
