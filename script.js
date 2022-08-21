@@ -3,20 +3,23 @@ const btnSobre = document.querySelector("#sobre");
 const btnSkills = document.querySelector("#skills");
 const divInfo = document.querySelector(".sobre");
 const divProjetos = document.querySelector(".projetos");
+const overlay = document.querySelector(".overlay");
 const divSkills = document.querySelector(".skills");
 const body = document.getElementsByTagName('body');
 
 const trocaFundoSobre = () => {
-	body[0].style.backgroundImage = 'url(../images/azulBranco.webp)'
+	body[0].style.backgroundImage = 'url(../images/azulBranco.webp)'	
 }
 
 
 const trocaFundoProjetos = () => {
 	body[0].style.backgroundImage = 'url(../images/projetos.jpg)'
+	overlay.style.display = 'block';
 }
 
 const trocaFundoSkills = () => {
 	body[0].style.backgroundImage = 'url(../images/skills.jpg)'
+	overlay.style.display = 'block';
 }
 
 const addSkills = () => {
@@ -27,7 +30,7 @@ const addSkills = () => {
 };
 
 const addInfo = () => {
-	divInfo.style.display = 'block';
+	divInfo.style.display = 'flex';
 	divProjetos.style.display = 'none';
 	divSkills.style.display = 'none';
 	trocaFundoSobre();
