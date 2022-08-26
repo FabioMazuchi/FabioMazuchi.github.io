@@ -241,9 +241,25 @@ footer a:hover {
   }
 }
 
+
 @media screen and (max-width:880px) {
   .out .single {
-    flex-basis: 35%;
+    flex-basis: 40%;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .out .single {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .projetos h2 {
+    font-size: 38px;
+  }
+  .single h2 {
+    font-size: 25px;
   }
 }
 
