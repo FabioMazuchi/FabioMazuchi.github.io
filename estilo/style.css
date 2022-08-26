@@ -261,6 +261,9 @@ footer a:hover {
   .single h2 {
     font-size: 25px;
   }
+  .skills h2 {
+    font-size: 38px;
+  }
 }
 
 @media screen and (min-height:640px) {
