@@ -92,6 +92,8 @@ section {
   width: 90%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  min-height: 390px;
 }
 
 .img-header {
@@ -105,7 +107,7 @@ img {
 
 .sobre-content {
   width: 60%;
-  padding: 25px 0 15px;
+  padding: 25px 0;
 }
 
 .sobre-content p {
@@ -288,9 +290,21 @@ footer a:hover {
   }
 }
 
-@media screen and (min-height:844px) {
+@media screen and (min-height:850px) {
   main {
-    min-height: 640px;
+    min-height: 670px;
+  }
+}
+
+@media screen and (min-height:896px) {
+  main {
+    min-height: 715px;
+  }
+}
+
+@media screen and (min-height:914px) {
+  main {
+    min-height: 730px;
   }
 }
 
