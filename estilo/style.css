@@ -131,7 +131,7 @@ img {
 .single {
   flex-basis: 28%;
   border: 2px solid #ccc;
-  padding: 18px;
+  padding: 12px;
 	display: flex;
 	flex-direction: column;
   border-radius: 6px;
