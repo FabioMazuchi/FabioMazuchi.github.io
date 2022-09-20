@@ -21,7 +21,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(29, 29, 29, 0.9);
+  background-color: rgba(29, 29, 29, 0.8);
 }
 
 header {
@@ -130,25 +130,28 @@ img {
 
 .single {
   flex-basis: 28%;
-  border: 2px solid #ccc;
-  padding: 12px;
 	display: flex;
 	flex-direction: column;
-  border-radius: 6px;
-  align-items: center;
   margin: 20px;
   transition: 0.3s;
+  background-color: rgb(88, 88, 88);
+  padding-bottom: 8px;
+  box-shadow: 3px 3px 3px rgb(31, 31, 31);
 } 
 
 .single:hover {
-  border: 2px solid rgb(126, 142, 220);
+  background-color: rgb(119, 118, 118);
 }
 
 .single h2 {
-  font-size: 28px;
+  margin: 8px 8px 12px 8px;
+  font-size: 20px;
   color: white;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   font-style: normal;
+  color: rgb(126, 142, 220);
+  font-style: italic;
+  font-weight: bold;
 }
 
 .single img {
@@ -157,10 +160,10 @@ img {
 }
 
 .single p {
-  margin-top: 10px;
+  margin: 0 8px;
   font-size: 15px;
-  text-align: justify;
-  font-style: italic;
+  /* text-align: justify; */
+  /* font-style: italic; */
 }
 
 footer {
@@ -218,15 +221,16 @@ footer a:hover {
 @media screen and (max-width:600px) {
   .out .single {
     flex-basis: 100%;
-    margin: 10px 0;
-    padding: 10px;
+    margin: 10px 0 18px 0;
+    padding-bottom: 8px;
   }
   .projetos h2 {
     margin: 0 0 10px 0;
-    font-size: 27px !important;
+    font-size: 30px !important;
   }
   .single h2 {
     font-size: 18px !important;
+    margin: 8px;
   }
   header {
     margin-bottom: 10px;
