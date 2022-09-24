@@ -46,7 +46,6 @@ h1 {
   text-transform: uppercase;
   transition: 0.2s;
   margin: 0 15px;
-  font-weight: bold;
 }
 
 .buttons button:hover {
@@ -249,7 +248,7 @@ footer p {
   }
 }
 
-@media screen and (max-width:280px) {
+@media screen and (max-width:340px) {
   h1 {
     font-size: 23px;
   }
