@@ -5,25 +5,19 @@
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-body {
-  position: relative;
-  z-index: 0;
+body, html {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #0C4454;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
   height: 100%;
 }
 
 header {
-  position: relative;
-  z-index: 2;
   padding: 8px 0;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 30px;
 }
 
 h1 {
@@ -54,19 +48,12 @@ h1 {
 
 a {
   text-decoration: none;
-  color: white;
-}
-
-main {
-  position: relative;
-  z-index: 3;
-  min-height: 420px;
 }
 
 section {
   display: flex;
   justify-content: center;
-  padding: 20px 2%;
+  padding: 0 2%;
   align-items: center;
 }
 
@@ -75,7 +62,6 @@ section {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 390px;
 }
 
 .img-header {
@@ -94,8 +80,7 @@ img {
 
 .sobre-content p {
   font-size: 18px;
-  margin-bottom: 16px;
-  line-height: 27px;
+  line-height: 29px;
   color: rgb(255, 255, 255);
 }
 
@@ -103,12 +88,14 @@ img {
   width: 90%;
   display: none;
   flex-direction: column;
+  margin: 30px 0;
+  align-items: center;
 }
  
 .projetos h2 {
   font-style: italic;
-  font-size: 60px;
-  margin: 0 0 14px 18px;
+  font-size: 50px;
+  margin: 0 0 14px 30px;
   color: white;
   font-weight: lighter;
 }
@@ -116,6 +103,7 @@ img {
 .out {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 18px;
 }
 
 .single {
@@ -125,12 +113,12 @@ img {
   margin: 20px;
   transition: 0.3s;
   background-color: white;
-  padding-bottom: 8px;
-  box-shadow: 3px 3px 3px rgb(6, 6, 6);
+  padding-bottom: 10px;
+  box-shadow: 4px 4px 4px rgb(41, 41, 41);
 } 
 
 .single:hover {
-  background-color: rgb(200, 200, 200);
+  background-color: rgb(212, 212, 212);
 }
 
 .single h2 {
@@ -138,7 +126,6 @@ img {
   font-size: 20px;
   font-style: normal;
   color: #0C4454;
-  font-style: italic;
   font-weight: bold;
 }
 
@@ -154,15 +141,11 @@ img {
 }
 
 footer {
-  position: relative;
-  width: 100%;
-  z-index: 3;
   padding: 15px 0;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin-top: 60px;
 }
 
 footer a {
@@ -181,10 +164,17 @@ footer p {
   color: #34ACC3;
 }
 
+@media screen and (max-width:890px) {
+  .out .single {
+    flex-basis: 45%;
+    margin: 10px;
+  }
+}
+
 @media screen and (max-width:700px) {
   .sobre {
     flex-direction: column;
-    width: 95%;
+    width: 98%;
   }
   .img-header {
     margin: 0 auto;
@@ -195,27 +185,27 @@ footer p {
   .sobre-content p {
     font-size: 16px;
   }
-}
-
-@media screen and (max-width:880px) {
-  .out .single {
-    flex-basis: 45%;
-    margin: 10px;
+  .projetos {
+    width: 98%;
   }
 }
 
+
+
 @media screen and (max-width:600px) {
+  .out {
+    margin: 0;
+  }
   .out .single {
     flex-basis: 100%;
-    margin: 10px 0 18px 0;
     padding-bottom: 8px;
   }
   .projetos h2 {
-    margin: 0 0 10px 0;
-    font-size: 30px !important;
+    margin: 0 0 10px 10px;
+    font-size: 30px;
   }
   .single h2 {
-    font-size: 18px !important;
+    font-size: 18px;
     margin: 8px;
   }
   header {
@@ -240,11 +230,20 @@ footer p {
     font-size: 18px;
     margin: 0 8px;
   }
+  .single h2 {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width:400px) {
   h1 {
     font-size: 29px;
+  }
+  .projetos h2 {
+    font-size: 27px;
+  }
+  .single h2 {
+    font-size: 20px;
   }
 }
 
@@ -257,7 +256,24 @@ footer p {
   }
 }
 
-@media screen and (min-height:640px) {
+@media screen and (max-width:290px) {
+  h1 {
+    font-size: 20px;
+    
+  }
+  .buttons button {
+    font-size: 14px;
+  }
+  footer p {
+    font-size: 17px;
+  }
+  footer i {
+    font-size: 27px;
+  }
+  
+}
+
+/* @media screen and (min-height:640px) {
   body {
     min-height: 300px;
   }
@@ -336,4 +352,4 @@ footer p {
   main{
     min-height: 1160px;
   }
-}
+} */
