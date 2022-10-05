@@ -66,6 +66,7 @@ section {
 
 .img-header {
   width: 28%;
+  height: 100%;
 }
 
 img {
@@ -177,10 +178,21 @@ footer p {
     width: 98%;
   }
   .img-header {
-    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    margin: 15px auto 0;
+  }
+  .img-header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
   }
   .sobre-content {
     width: 100%;
+  }
+  .sobre-content h1 {
+    display: none;
   }
   .sobre-content p {
     font-size: 16px;
@@ -223,6 +235,9 @@ footer p {
   .skills h2 {
     font-size: 38px;
   }
+  .sobre-content p {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width:440px) {
@@ -232,6 +247,10 @@ footer p {
   }
   .single h2 {
     font-size: 20px;
+  }
+  .img-header img {
+    width: 120px;
+    height: 120px;
   }
 }
 
