@@ -9,7 +9,8 @@ body, html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #0C4454;
+  background: rgb(52,172,195);
+background: radial-gradient(circle, rgba(52,172,195,1) 0%, rgba(12,68,84,1) 60%);
   height: 100%;
 }
 
@@ -182,6 +183,10 @@ footer p {
 }
 
 @media screen and (max-width:700px) {
+  body {
+    background: rgb(52,172,195);
+    background: linear-gradient(90deg, rgba(52,172,195,1) 0%, rgba(12,68,84,1) 29%);
+  }
   .sobre {
     flex-direction: column;
     width: 98%;
@@ -318,8 +323,24 @@ footer p {
 }
 
 @media screen and (max-width:340px) {
-  h1 {
-    font-size: 23px;
+  .sobre-content strong {
+    font-size: 15px;
+  }
+  .sobre-content h1 {
+    font-size: 15px;
+  }
+  .sobre-content h2 {
+    font-size: 12px;
+  }
+  .sobre-content p {
+    font-size: 10px;
+    line-height: 17px;
+  }
+  footer a {
+    font-size: 18px;
+  }
+  footer p {
+    font-size: 18px;
   }
 }
 
@@ -331,10 +352,5 @@ footer p {
   .buttons button {
     font-size: 14px;
   }  
-  footer a {
-    font-size: 18px;
-  }
-  footer p {
-    font-size: 18px;
-  }
+
 }
