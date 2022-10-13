@@ -9,7 +9,7 @@ body, html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #0C4454;
+  background-color: white;
   height: 100%;
 }
 
@@ -18,7 +18,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #34ACC3;
+  background-color: #0C4454;
   margin-bottom: 50px;
 }
 
@@ -26,10 +26,10 @@ header {
 .buttons button{
   padding: 2px 6px;
   font-size: 24px;
-  color: #0C4454;
+  color: white;
   cursor: pointer;
   border: 0;
-  background-color: #34ACC3;
+  background-color: transparent;
   margin: 0 15px;
 }
 
@@ -72,12 +72,12 @@ img {
 
 .sobre-content h1 {
   font-size: 32px;
-  color: white;
+  color: #0C4454;
 }
 
 .sobre-content h2 {
   font-size: 25px;
-  color: white;
+  color: #0C4454;
   margin: 5px 0 18px;
   font-style: italic;
 }
@@ -91,8 +91,9 @@ img {
 
 .sobre-content p {
   font-size: 18px;
-  line-height: 29px;
-  color: rgb(255, 255, 255);
+  line-height: 25px;
+  color: #0C4454;
+  margin-bottom: 15px;
 }
 
 .projetos {
@@ -106,7 +107,7 @@ img {
   font-style: italic;
   font-size: 50px;
   margin: 0 0 14px 34px;
-  color: #34ACC3;
+  color: #0C4454;
   font-weight: lighter;
   display: inline-block;
   border-bottom: 2px solid;
@@ -153,24 +154,24 @@ footer {
   padding: 15px 0;
   display: flex;
   align-items: center;
-  background-color: #34ACC3;
+  background-color: #0C4454;
   justify-content: space-evenly;
 }
 
 footer a {
   margin: 0 25px;
   font-size: 33px;
-  color: #0C4454;
+  color: white;
   transition: 0.3s;
 }
 
 footer a:hover {
-  color: #1c677c;
+  color: rgb(186, 186, 186);
 }
 
 footer p {
   font-size: 26px;
-  color: #0C4454;
+  color: white;
   font-weight: bold;
 }
 
@@ -195,7 +196,7 @@ footer p {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2px solid #0C4454;
   }
   .sobre-content {
     width: 100%;
@@ -317,9 +318,19 @@ footer p {
   }
 }
 
-@media screen and (max-width:340px) {
-  h1 {
-    font-size: 23px;
+@media screen and (max-width:330px) {
+  .sobre-content h1 {
+    font-size: 14px;
+  }
+  .sobre-content strong {
+    font-size: 14px;
+  }
+  .sobre-content h2 {
+    font-size: 12px;
+  }
+  .sobre-content p {
+    font-size: 10px;
+    line-height: 14px;
   }
 }
 
