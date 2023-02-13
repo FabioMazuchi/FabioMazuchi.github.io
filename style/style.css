@@ -1,0 +1,305 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Merriweather', serif;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	display: grid;
+	grid-template-rows: 10vh auto auto;
+}
+
+header {
+	width: 100%;
+	background-color: #444054;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+header nav ul {
+	list-style-type: none;
+	display: flex;
+}
+
+header nav ul li {
+	margin-right: 18px;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	text-transform: capitalize;
+}
+
+header nav ul li a:hover {
+	color: rgb(188, 182, 182);
+	transition: 0.5s;
+}
+
+section.home {
+	padding: 0 5%;
+	margin-top: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly
+}
+
+section.home div {
+	margin-right: 8px;
+}
+
+section.home img {
+	width: 230px;
+	height: 230px;
+	border-radius: 50%;
+	border: 2px solid #2F243A;
+}
+
+section.home h1 {
+	font-size: 55px;
+	color: #2F243A;
+}
+
+section.home h2 {
+	font-size: 30px;
+	color: #2F243A;
+	font-weight: lighter;
+}
+
+section.sobre {
+	margin: 100px auto;
+	padding: 50px 5%;
+	color: white;
+	background-color: #444054;
+}
+
+.title {
+	text-align: center;
+	font-size: 42px;
+	margin-bottom: 10px;
+}
+
+section.sobre p {
+	text-align: center;
+	line-height: 29px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+section.skills {
+	padding: 0 5%;
+	margin: 100px 0;
+	color: #444054;
+}
+
+section.skills h1 {
+	color: #444054;
+	margin-bottom: 25px;
+}
+
+.content  {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.content div  {
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+	height: 70px;
+	align-items: center;
+	margin-bottom: 70px;
+}
+
+.content div img  {
+	width: 70px;
+	height: 100%;
+	margin-bottom: 5px;
+}
+
+section.projetos {
+	background-color: #2F243A;
+	margin: 100px auto;
+	padding: 50px 5%;
+}
+
+section.projetos h1 {
+	color: white;
+	margin-bottom: 40px;
+}
+
+section.projetos a {
+	display: flex;
+	flex-direction: column;
+	width: 23%;
+	align-items: center;
+	margin-bottom: 40px;
+} 
+
+section.projetos .content a {
+	height: 130px;
+	padding: 13px 8px;
+	border-radius: 6px;
+	box-shadow: rgba(223, 219, 219, 0.24) 0px 3px 8px;
+	color: white;
+	text-decoration: none;
+}
+
+section.projetos .content a img {
+	width: 100%;
+	height: 80%;
+	margin-bottom: 4px;
+}
+
+section.contato {
+	margin: 100px 0;
+	padding: 0 5%;
+	color: #2F243A;
+}
+
+section.contato div {
+	display: flex;
+	justify-content: space-around;
+}
+
+section.contato h1 {
+	margin-bottom: 50px;
+}
+
+section.contato p {
+	margin-bottom: 5px;
+	font-size: 25px;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	color: white;
+	background-color: #444054;
+	min-height: 120px;
+}
+
+footer p {
+	font-size: 20px;
+}
+
+footer div {
+	width: 20%;
+	display: flex;
+	justify-content: space-around;
+}
+
+footer div a img {
+	width: 50px;
+	height: 50px;
+}
+
+.linkedin {
+	width: 70px;
+}
+
+@media screen and (max-width: 850px) {
+	section.contato div {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	section.home {
+		flex-direction: column;
+		margin-top: 50px;
+	}
+	section.home div {
+		margin: 15px 0;
+	}
+	section.home div img {
+		width: 130px;
+		height: 130px;
+	}
+	section.home div h1 {
+		font-size: 45px;
+	}
+	section.sobre {
+		margin: 50px auto;
+	}
+	section.skills {
+		margin: 50px auto;
+	}
+	section.projetos {
+		margin: 50px auto;
+	}
+	section.contato {
+		margin: 50px 0;
+	}
+	section.projetos a {
+
+	width: 45%;
+	} 
+}
+
+@media screen and (max-width: 420px) {
+	header nav ul li a {
+		font-size: 14px;
+	}
+	section.home div {
+		margin: 10px 0;
+	}
+	section.home div img {
+		width: 100px;
+		height: 100px;
+	}
+	.title {
+		font-size: 30px;
+	}
+	section.home div h2 {
+		font-size: 20px;
+	}
+	section.sobre {
+		margin: 20px auto;
+		padding: 20px 3%;
+	}
+	section.sobre h1 {
+		font-size: 30px;
+	}
+	section.sobre p {
+		font-size: 16px;
+	}
+	section.skills {
+		margin: 20px auto;
+	}
+	section.skills img {
+		width: 40px;
+	}
+	section.projetos {
+		margin: 20px auto;
+	}
+	section.contato {
+		margin: 20px 0;
+	}
+	section.contato p {
+		font-size: 18px;
+	}
+	footer p {
+		font-size: 15px;
+	} 
+	footer div {
+		width: 40%;
+	}
+
+	footer div a img {
+		width: 40px;
+		height: 40px;
+	}
+}
