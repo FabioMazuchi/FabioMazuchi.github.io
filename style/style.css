@@ -7,6 +7,7 @@
 
 html, body {
 	height: 100%;
+	width: 100%;
 }
 
 body {
@@ -22,13 +23,14 @@ header {
 	justify-content: center;
 }
 
+header nav {
+	width: 400px;
+}
+
 header nav ul {
 	list-style-type: none;
 	display: flex;
-}
-
-header nav ul li {
-	margin-right: 18px;
+	justify-content: space-between;
 }
 
 header nav ul li a {
@@ -250,11 +252,17 @@ footer div a img {
 }
 
 @media screen and (max-width: 420px) {
+	header nav {
+		width: 300px;
+	}
 	header nav ul li a {
 		font-size: 14px;
 	}
 	section.home div {
 		margin: 10px 0;
+	}
+	section.home div h1 {
+		font-size: 35px;
 	}
 	section.home div img {
 		width: 100px;
@@ -297,9 +305,82 @@ footer div a img {
 	footer div {
 		width: 40%;
 	}
-
 	footer div a img {
 		width: 40px;
 		height: 40px;
+	}
+}
+
+@media screen and (max-width: 280px) {
+	header nav {
+		width: 250px;
+	}
+	header nav ul li a {
+		font-size: 12px;
+	}
+	section.home {
+		margin-top: 20px;
+	}
+	section.home div {
+		margin: 10px 0;
+	}
+	section.home div h1 {
+		font-size: 25px;
+	}
+	section.home div img {
+		width: 80px;
+		height: 80px;
+	}
+	.title {
+		font-size: 20px !important;
+	}
+	section.home div h2 {
+		font-size: 18px;
+	}
+	section.sobre {
+		margin: 10px auto;
+		padding: 20px 3%;
+	}
+	section.sobre p {
+		font-size: 13px;
+		line-height: 20px;
+	}
+	section.skills {
+		margin: 10px auto;
+	}
+	section.skills .content div {
+		width: 40%;
+		margin-bottom: 20px;
+	}
+	section.skills img {
+		width: 30px;
+		height: 30px;
+	}
+	section.skills img {
+		width: 30px;
+		height: 30px;
+	}
+	section.projetos {
+		margin: 10px auto;
+		padding: 20px 3%;
+	}
+	section.contato {
+		margin: 10px 0;
+	}
+	section.contato h1 {
+		margin-bottom: 20px;
+	}
+	section.contato p {
+		font-size: 16px;
+	}
+	footer p {
+		font-size: 12px;
+	} 
+	footer div {
+		width: 50%;
+	}
+	footer div a img {
+		width: 30px;
+		height: 30px;
 	}
 }
