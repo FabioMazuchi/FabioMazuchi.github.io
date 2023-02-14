@@ -70,9 +70,23 @@ section.home h1 {
 }
 
 section.home h2 {
+	margin-bottom: 18px;
 	font-size: 30px;
 	color: #2F243A;
 	font-weight: lighter;
+}
+
+section.home a {
+	text-decoration: none;
+	background-color: rgb(215, 79, 29);
+	padding: 4px 8px;
+	color: white;
+	font-size: 20px;
+}
+
+section.home a:hover {
+	transition: 0.3s;
+	background-color: rgb(239, 121, 79);
 }
 
 section.sobre {
@@ -145,7 +159,12 @@ section.projetos a {
 	width: 23%;
 	align-items: center;
 	margin-bottom: 40px;
-} 
+}
+
+section.projetos a:hover p {
+	color: #b29bca;
+	transition: 0.4s;
+}
 
 section.projetos .content a {
 	height: 130px;
@@ -220,6 +239,7 @@ footer div a img {
 		margin-top: 50px;
 	}
 	section.home div {
+		text-align: center;
 		margin: 15px 0;
 	}
 	section.home div img {
@@ -228,6 +248,7 @@ footer div a img {
 	}
 	section.home div h1 {
 		font-size: 45px;
+		margin-bottom: -10px;
 	}
 	section.sobre {
 		margin: 50px auto;
@@ -325,6 +346,10 @@ footer div a img {
 	}
 	section.home div h1 {
 		font-size: 25px;
+		margin-bottom: -4px;
+	}
+	section.home div a {
+		font-size: 14px;
 	}
 	section.home div img {
 		width: 80px;
@@ -342,7 +367,7 @@ footer div a img {
 	}
 	section.sobre p {
 		font-size: 13px;
-		line-height: 20px;
+		line-height: 16px;
 	}
 	section.skills {
 		margin: 10px auto;
