@@ -8,36 +8,49 @@
 html, body {
 	height: 100%;
 	width: 100%;
-}
-
-body {
-	display: grid;
-	grid-template-rows: 10vh auto auto;
+	scroll-behavior: smooth;
 }
 
 header {
+	position: fixed;
+	top: 0;
+	margin-bottom: 80px;
 	width: 100%;
 	background-color: #444054;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding: 15px 0;
 }
 
 header nav {
-	width: 400px;
+	width: 45%;
 }
 
 header nav ul {
 	list-style-type: none;
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 }
 
 header nav ul li a {
 	text-decoration: none;
 	color: white;
-	font-size: 22px;
+	font-size: 20px;
 	text-transform: capitalize;
+}
+
+a.curriculo {
+	background-color: rgb(215, 79, 29);
+	padding: 5px 9px;
+	font-size: 15px;
+	border-radius: 13px;
+}
+
+a.curriculo:hover {
+	background-color: rgb(220, 106, 65);
+	color: white;
 }
 
 header nav ul li a:hover {
@@ -45,13 +58,17 @@ header nav ul li a:hover {
 	transition: 0.5s;
 }
 
+main {
+	margin-top: 20px;
+}
+
 section.home {
-	padding: 0 5%;
-	margin-top: 100px;
+	padding: 90px 5% 40px;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly
 }
+
 
 section.home div {
 	margin-right: 8px;
@@ -67,6 +84,10 @@ section.home img {
 section.home h1 {
 	font-size: 55px;
 	color: #2F243A;
+}
+
+section.home h1 strong {
+	color: rgb(215, 79, 29);
 }
 
 section.home h2 {
@@ -90,7 +111,6 @@ section.home a:hover {
 }
 
 section.sobre {
-	margin: 60px auto;
 	padding: 50px 5%;
 	color: white;
 	background-color: #444054;
@@ -111,8 +131,7 @@ section.sobre p {
 }
 
 section.skills {
-	padding: 0 5%;
-	margin: 60px 0;
+	padding: 50px 5%;
 	color: #444054;
 }
 
@@ -144,7 +163,6 @@ section.skills h1 {
 
 section.projetos {
 	background-color: #2F243A;
-	margin: 60px auto;
 	padding: 50px 5%;
 }
 
@@ -182,8 +200,7 @@ section.projetos .content a img {
 }
 
 section.contato {
-	margin: 60px 0;
-	padding: 0 5%;
+	padding: 50px 4%;
 	color: #2F243A;
 }
 
@@ -226,6 +243,12 @@ footer div a img {
 	height: 50px;
 }
 
+@media screen and (max-width: 930px) {
+	header nav {
+		width: 60%;
+	}
+}
+
 @media screen and (max-width: 850px) {
 	section.contato div {
 		flex-direction: column;
@@ -234,13 +257,18 @@ footer div a img {
 }
 
 @media screen and (max-width: 700px) {
+	header nav {
+		width: 75%;
+	}
+	header nav ul li a {
+		font-size: 17px;
+	}
 	section.home {
 		flex-direction: column;
-		margin-top: 50px;
+		padding: 60px 3% 0px;
 	}
 	section.home div {
 		text-align: center;
-		margin: 15px 0;
 	}
 	section.home div img {
 		width: 130px;
@@ -251,35 +279,46 @@ footer div a img {
 		margin-bottom: -10px;
 	}
 	section.sobre {
-		margin: 50px auto;
+		padding: 45px 4%;
 	}
 	section.skills {
-		margin: 50px auto;
+		padding: 45px 4%;
 	}
 	section.projetos {
-		margin: 50px auto;
+		padding: 45px 4%;
 	}
 	section.contato {
-		margin: 50px 0;
+		padding: 10px 4%;
 	}
 	section.projetos a {
-
-	width: 45%;
+		width: 47%;
+		margin-bottom: 12px;
 	} 
+}
+
+@media screen and (max-width: 540px) {
+	header nav {
+		width: 90%;
+		font-size: 10px;
+	}
 }
 
 @media screen and (max-width: 420px) {
 	header nav {
-		width: 300px;
+		width: 97%;
 	}
 	header nav ul li a {
-		font-size: 18px;
+		font-size: 15px;
 	}
-	section.home div {
-		margin: 10px 0;
+	a.curriculo {
+		padding: 2 6px;
+		font-size: 12px;
+	}
+	section.home {
+		padding: 60px 2% 40px;
 	}
 	section.home div h1 {
-		font-size: 35px;
+		font-size: 30px;
 	}
 	section.home div img {
 		width: 100px;
@@ -290,9 +329,6 @@ footer div a img {
 	}
 	section.home div h2 {
 		font-size: 20px;
-	}
-	section.sobre {
-		padding: 20px 3%;
 	}
 	section.sobre h1 {
 		font-size: 30px;
@@ -332,11 +368,12 @@ footer div a img {
 }
 
 @media screen and (max-width: 280px) {
-	header nav {
-		width: 250px;
-	}
 	header nav ul li a {
 		font-size: 12px;
+	}
+	a.curriculo {
+		padding: 1 4px;
+		font-size: 10px;
 	}
 	section.home {
 		margin-top: 20px;
