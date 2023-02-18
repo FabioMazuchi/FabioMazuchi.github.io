@@ -338,13 +338,13 @@ footer div a img {
 		line-height: 22px;
 	}
 	section.skills {
-		margin: 20px auto;
+		margin: 20px auto 0;
 	}
 	section.skills img {
 		width: 40px;
 	}
 	section.projetos {
-		margin: 20px auto;
+		margin: 0px auto;
 	}
 	section.contato {
 		margin: 20px 0;
