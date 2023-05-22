@@ -42,14 +42,14 @@ header nav ul li a {
 }
 
 a.curriculo {
-	background-color: rgb(215, 79, 29);
+	background-color: #F78525;
 	padding: 5px 9px;
 	font-size: 15px;
 	border-radius: 13px;
 }
 
 a.curriculo:hover {
-	background-color: rgb(220, 106, 65);
+	background-color: #fb7a10;
 	color: white;
 }
 
@@ -87,7 +87,7 @@ section.home h1 {
 }
 
 section.home h1 strong {
-	color: rgb(215, 79, 29);
+	color: #F78525;
 }
 
 section.home h2 {
