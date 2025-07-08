@@ -100,7 +100,7 @@ section.home h2 {
 }
 
 section.sobre {
-	padding: 50px 5%;
+	padding: 50px 7%;
 	color: white;
 	background-color: #444054;
 }
@@ -113,7 +113,7 @@ section.sobre {
 
 section.sobre p {
 	text-align: center;
-	line-height: 26px;
+	line-height: 32px;
 	margin-bottom: 20px;
 	font-size: 20px;
 	font-weight: lighter;
@@ -168,7 +168,7 @@ section.projetos a:hover p {
 section.projetos .content-projetos {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 section.projetos .content-projetos a {
@@ -219,6 +219,7 @@ footer {
 	color: white;
 	background-color: #444054;
 	min-height: 120px;
+	padding: 0 2%;
 }
 
 footer p {
